@@ -1,20 +1,81 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GlobalExport - Used Car Export Analyzer
 
-# Run and deploy your AI Studio app
+A modern web application for analyzing and managing used car exports. Built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1FdCI1-yKNad9fT1H9reEoaZwkBsVR6jh
+- Interactive landing page with survey functionality
+- Responsive design with modern UI components
+- Built-in reveal animations for smooth user experience
+- Information sections for export process guidance
+
+## Tech Stack
+
+- **Framework:** React 19.2.4
+- **Language:** TypeScript 5.8.2
+- **Build Tool:** Vite 6.2.0
+- **Icons:** Lucide React 0.563.0
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js (v16 or higher)
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/s0613/globalexport.git
+   cd globalexport
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+├── components/       # React components
+│   ├── Hero.tsx
+│   ├── Footer.tsx
+│   ├── InfoSection.tsx
+│   ├── Survey.tsx
+│   └── Reveal.tsx
+├── App.tsx          # Main application component
+├── index.tsx        # Application entry point
+├── types.ts         # TypeScript type definitions
+└── vite.config.ts   # Vite configuration
+```
+
+## Deployment
+
+This project can be deployed to Vercel, Netlify, or any static hosting service that supports Vite applications.
+
+For Vercel:
+1. Push your code to GitHub
+2. Import the repository in Vercel
+3. Deploy with default Vite settings
+
+## License
+
+Private project
