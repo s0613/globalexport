@@ -1,23 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, Globe, TrendingUp } from 'lucide-react';
-import { Reveal } from './Reveal';
 
 interface HeroProps {
   onStartSurvey: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // 컴포넌트 마운트 후 바로 애니메이션 시작
+    const timer = setTimeout(() => setIsLoaded(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20 lg:pt-0">
       {/* Background Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent z-10 pointer-events-none lg:w-2/3" />
-      
+
       {/* Spline Container */}
       <div className="absolute top-0 right-0 w-full h-[50vh] lg:h-full lg:w-3/4 z-0 opacity-80 lg:opacity-100">
-         <iframe 
-            src='https://my.spline.design/pushittothelimit-Sq1M3KaS2awLKqeKwMrq8Q4T/' 
-            frameBorder='0' 
-            width='100%' 
+         <iframe
+            src='https://my.spline.design/pushittothelimit-Sq1M3KaS2awLKqeKwMrq8Q4T/'
+            frameBorder='0'
+            width='100%'
             height='100%'
             className="w-full h-full pointer-events-auto"
             title="3D Car Animation"
@@ -28,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
 
       <div className="container mx-auto px-6 relative z-20">
         <div className="max-w-2xl">
-          <Reveal>
+          <div className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/50 text-cyan-400 text-sm font-semibold flex items-center gap-1">
                 <Globe size={14} /> Global Export Market
@@ -37,9 +44,9 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
                 <TrendingUp size={14} /> Demand High
               </span>
             </div>
-          </Reveal>
+          </div>
 
-          <Reveal delay={200}>
+          <div className={`transition-all duration-700 ease-out delay-100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-white">
               내 차, 한국보다<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
@@ -47,17 +54,17 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
               </span><br />
               팔릴 수 있을까?
             </h1>
-          </Reveal>
+          </div>
 
-          <Reveal delay={400}>
+          <div className={`transition-all duration-700 ease-out delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-lg">
               3분 만에 확인하는 내 중고차 수출 시세 및 수요 조사.<br />
               감가상각이 심한 국내 시장 대신,<br />
               <strong className="text-white">전 세계 바이어</strong>와 직접 연결되는 기회를 잡으세요.
             </p>
-          </Reveal>
+          </div>
 
-          <Reveal delay={600}>
+          <div className={`transition-all duration-700 ease-out delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <button
               onClick={onStartSurvey}
               className="group relative px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-lg font-bold rounded-xl transition-all shadow-lg shadow-cyan-500/30 flex items-center gap-3 overflow-hidden"
@@ -69,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
             <p className="mt-4 text-sm text-slate-500">
               * 개인정보는 시세 조회 목적으로만 사용됩니다.
             </p>
-          </Reveal>
+          </div>
         </div>
       </div>
       
