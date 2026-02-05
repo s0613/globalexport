@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -6,7 +7,9 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-6 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-                <h4 className="text-white font-bold text-lg mb-4">GlobalExport</h4>
+                <Link to="/" className="text-white font-bold text-lg mb-4 block hover:text-cyan-400 transition-colors">
+                  GlobalExport
+                </Link>
                 <p className="text-slate-500 text-sm">
                     대한민국 No.1 중고차 수출 플랫폼.<br/>
                     전 세계 40개국 바이어 네트워크 보유.
@@ -15,7 +18,11 @@ export const Footer: React.FC = () => {
             <div>
                 <h4 className="text-white font-bold mb-4">Service</h4>
                 <ul className="text-slate-500 text-sm space-y-2">
-                    <li>내 차 견적 조회</li>
+                    <li>
+                      <a href="/#survey-section" className="hover:text-cyan-400 transition-colors">
+                        내 차 견적 조회
+                      </a>
+                    </li>
                     <li>수출 가능 모델</li>
                     <li>실시간 수출 시세</li>
                 </ul>
@@ -23,7 +30,11 @@ export const Footer: React.FC = () => {
             <div>
                 <h4 className="text-white font-bold mb-4">Company</h4>
                 <ul className="text-slate-500 text-sm space-y-2">
-                    <li>회사 소개</li>
+                    <li>
+                      <Link to="/about" className="hover:text-cyan-400 transition-colors">
+                        회사 소개
+                      </Link>
+                    </li>
                     <li>이용약관</li>
                     <li>개인정보처리방침</li>
                 </ul>
