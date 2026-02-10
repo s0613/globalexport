@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Footer } from './components/Footer';
+import { LanguageSwitcher } from './components/LanguageSwitcher';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Models } from './pages/Models';
@@ -11,6 +13,7 @@ import { Quote } from './pages/Quote';
 const Header: React.FC = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
@@ -37,7 +40,7 @@ const Header: React.FC = () => {
                 : 'text-slate-300 hover:text-white'
             }`}
           >
-            홈
+            {t('header.home')}
           </Link>
           <Link
             to="/models"
@@ -47,7 +50,7 @@ const Header: React.FC = () => {
                 : 'text-slate-300 hover:text-white'
             }`}
           >
-            수출 인기모델
+            {t('header.models')}
           </Link>
           <Link
             to="/price"
@@ -57,7 +60,7 @@ const Header: React.FC = () => {
                 : 'text-slate-300 hover:text-white'
             }`}
           >
-            실시간 시세
+            {t('header.price')}
           </Link>
           <Link
             to="/about"
@@ -67,7 +70,7 @@ const Header: React.FC = () => {
                 : 'text-slate-300 hover:text-white'
             }`}
           >
-            회사소개
+            {t('header.about')}
           </Link>
           <Link
             to="/quote"
@@ -78,18 +81,22 @@ const Header: React.FC = () => {
             }`}
             onClick={handleLinkClick}
           >
-            견적 조회
+            {t('header.quote')}
           </Link>
+          <LanguageSwitcher />
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 text-slate-300 hover:text-white"
-          aria-label="메뉴 열기"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <LanguageSwitcher />
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="p-2 text-slate-300 hover:text-white"
+            aria-label={t('header.menuOpen')}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
@@ -105,7 +112,7 @@ const Header: React.FC = () => {
               }`}
               onClick={handleLinkClick}
             >
-              홈
+              {t('header.home')}
             </Link>
             <Link
               to="/models"
@@ -116,7 +123,7 @@ const Header: React.FC = () => {
               }`}
               onClick={handleLinkClick}
             >
-              수출 인기모델
+              {t('header.models')}
             </Link>
             <Link
               to="/price"
@@ -127,7 +134,7 @@ const Header: React.FC = () => {
               }`}
               onClick={handleLinkClick}
             >
-              실시간 시세
+              {t('header.price')}
             </Link>
             <Link
               to="/about"
@@ -138,7 +145,7 @@ const Header: React.FC = () => {
               }`}
               onClick={handleLinkClick}
             >
-              회사소개
+              {t('header.about')}
             </Link>
             <Link
               to="/quote"
@@ -149,7 +156,7 @@ const Header: React.FC = () => {
               }`}
               onClick={handleLinkClick}
             >
-              견적 조회
+              {t('header.quote')}
             </Link>
           </div>
         </nav>

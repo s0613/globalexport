@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Globe, TrendingUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface HeroProps {
   onStartSurvey: () => void;
@@ -7,9 +8,9 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
-    // 컴포넌트 마운트 후 바로 애니메이션 시작
     const timer = setTimeout(() => setIsLoaded(true), 50);
     return () => clearTimeout(timer);
   }, []);
@@ -29,7 +30,6 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
             className="w-full h-full pointer-events-auto"
             title="3D Car Animation"
          ></iframe>
-         {/* Overlay to prevent scroll trapping on mobile until focused interactions */}
          <div className="absolute inset-0 bg-transparent pointer-events-none md:hidden" />
       </div>
 
@@ -38,29 +38,29 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
           <div className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/50 text-cyan-400 text-sm font-semibold flex items-center gap-1">
-                <Globe size={14} /> Global Export Market
+                <Globe size={14} /> {t('hero.badgeGlobal')}
               </span>
               <span className="px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/50 text-orange-400 text-sm font-semibold flex items-center gap-1">
-                <TrendingUp size={14} /> Demand High
+                <TrendingUp size={14} /> {t('hero.badgeDemand')}
               </span>
             </div>
           </div>
 
           <div className={`transition-all duration-700 ease-out delay-100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-white">
-              내 차, 한국보다<br />
+              {t('hero.titleLine1')}<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
-                해외에서 더 비싸게
+                {t('hero.titleLine2')}
               </span><br />
-              팔릴 수 있을까?
+              {t('hero.titleLine3')}
             </h1>
           </div>
 
           <div className={`transition-all duration-700 ease-out delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-lg">
-              3분 만에 확인하는 내 중고차 수출 시세 및 수요 조사.<br />
-              감가상각이 심한 국내 시장 대신,<br />
-              <strong className="text-white">전 세계 바이어</strong>와 직접 연결되는 기회를 잡으세요.
+              {t('hero.descLine1')}<br />
+              {t('hero.descLine2')}<br />
+              <strong className="text-white">{t('hero.descHighlight')}</strong>{t('hero.descLine3')}
             </p>
           </div>
 
@@ -69,20 +69,20 @@ export const Hero: React.FC<HeroProps> = ({ onStartSurvey }) => {
               onClick={onStartSurvey}
               className="group relative px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-lg font-bold rounded-xl transition-all shadow-lg shadow-cyan-500/30 flex items-center gap-3 overflow-hidden"
             >
-              <span className="relative z-10">수출 가능 여부 확인하기</span>
+              <span className="relative z-10">{t('hero.cta')}</span>
               <ArrowRight className="relative z-10 group-hover:translate-x-1 transition-transform" />
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 backdrop-blur-sm" />
             </button>
             <p className="mt-4 text-sm text-slate-500">
-              * 개인정보는 시세 조회 목적으로만 사용됩니다.
+              {t('hero.disclaimer')}
             </p>
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Down Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce text-slate-500 hidden lg:block">
-        <span className="text-xs uppercase tracking-widest mb-2 block text-center">Scroll</span>
+        <span className="text-xs uppercase tracking-widest mb-2 block text-center">{t('hero.scroll')}</span>
         <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
       </div>
     </section>

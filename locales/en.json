@@ -1,0 +1,320 @@
+{
+  "common": {
+    "next": "Next",
+    "yearSuffix": "",
+    "kmSuffix": "km",
+    "tenThousandWon": "M KRW"
+  },
+  "header": {
+    "home": "Home",
+    "models": "Popular Models",
+    "price": "Live Prices",
+    "about": "About",
+    "quote": "Get a Quote",
+    "menuOpen": "Open menu"
+  },
+  "hero": {
+    "badgeGlobal": "Global Export Market",
+    "badgeDemand": "High Demand",
+    "titleLine1": "Could your car sell",
+    "titleLine2": "for more overseas",
+    "titleLine3": "than in Korea?",
+    "descLine1": "Check your used car's export value and demand in just 3 minutes.",
+    "descLine2": "Instead of the fast-depreciating domestic market,",
+    "descHighlight": "global buyers",
+    "descLine3": " — seize the opportunity to connect directly.",
+    "cta": "Check Export Eligibility",
+    "disclaimer": "* Personal information is used only for price inquiries.",
+    "scroll": "Scroll"
+  },
+  "info": {
+    "title": "Hottest Export Models Right Now",
+    "subtitle": "Check if your car qualifies. High mileage is not a problem.",
+    "categories": [
+      {
+        "title": "Compact SUV",
+        "models": "Sportage, Tucson",
+        "desc": "Explosive demand in the Middle East with high residual value"
+      },
+      {
+        "title": "Mid-size SUV (7-seater)",
+        "models": "Santa Fe, Sorento",
+        "desc": "#1 preference in family-oriented regions (Latin America/Middle East)"
+      },
+      {
+        "title": "Vans",
+        "models": "Starex, Carnival",
+        "desc": "Steady sellers in Southeast Asia & Central Asia"
+      },
+      {
+        "title": "Commercial / Trucks",
+        "models": "Porter, Bongo",
+        "desc": "Essential for construction sites in developing countries"
+      }
+    ]
+  },
+  "survey": {
+    "sectionLabel": "Premium Valuation",
+    "sectionTitle": "Get Your Car Valued",
+    "step1": {
+      "title": "What car do you drive?",
+      "placeholder": "e.g. Avante, Sorento, Porter 2",
+      "quickOptions": ["Avante", "Sorento", "Starex", "Porter"]
+    },
+    "step2": {
+      "title": "Any accident history?",
+      "subtitle": "Export pricing is less affected by minor repairs or part replacements.",
+      "options": {
+        "none": { "label": "No accidents", "desc": "No replacements or body work" },
+        "simple": { "label": "Minor repairs", "desc": "Simple bumper/fender replacement" },
+        "major": { "label": "Accident history", "desc": "Frame damage or wheel house" }
+      }
+    },
+    "step3": {
+      "title": "Select the model year"
+    },
+    "step4": {
+      "title": "What is the mileage?",
+      "subtitle": "Even over 200,000km is fine for export!",
+      "placeholder": "e.g. 150000"
+    },
+    "step5": {
+      "title": "Contact information for results",
+      "subtitle": "We'll send you the buyer info with the highest bid.",
+      "placeholder": "010-0000-0000",
+      "submit": "Get Free Quote"
+    },
+    "step6": {
+      "analysis1": "Connecting to global price database...",
+      "analysis2": "Scanning purchase requests from Middle East (Libya, Jordan)...",
+      "analysis3": "Comparing bids from Russia/Central Asia buyers...",
+      "complete": "Search complete! {{model}} is a promising export model.",
+      "queryCount": "Related model queries:",
+      "queryUnit": ""
+    },
+    "step7": {
+      "title": "Submission Complete!",
+      "descLine1": "Based on the information you provided,",
+      "descHighlight": "the optimal export route",
+      "descLine2": " will be analyzed",
+      "descLine3": "and we'll contact you within 10 minutes.",
+      "summaryTitle": "Information Summary",
+      "carModel": "Model",
+      "year": "Year",
+      "mileage": "Mileage",
+      "accident": "Accident",
+      "accidentNone": "No accidents",
+      "accidentSimple": "Minor repairs",
+      "accidentMajor": "Accident history",
+      "restart": "Start Over"
+    }
+  },
+  "footer": {
+    "description": "Korea's No.1 used car export platform.\nBuyer network in over 40 countries worldwide.",
+    "service": "Service",
+    "quoteLink": "Get a Quote",
+    "exportModels": "Export Models",
+    "livePrice": "Live Export Prices",
+    "company": "Company",
+    "aboutLink": "About Us",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "© 2026 GlobalExport Co., Ltd. All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "GlobalExport - Used Car Export Price Check | Check Your Car's Overseas Value",
+      "description": "Check your used car export price for free. Get real-time overseas export price estimates for Korean cars including Hyundai, Kia, and SsangYong. GlobalExport - Korea's premier used car export platform."
+    },
+    "models": {
+      "title": "Popular Used Car Export Models | Sportage Tucson Santa Fe Sorento Starex - GlobalExport",
+      "description": "Discover the most popular used car export models overseas. Including Sportage, Tucson, Santa Fe, Sorento, Starex, Carnival, Porter, and Bongo - high demand vehicles in the Middle East, Southeast Asia, and Latin America."
+    },
+    "price": {
+      "title": "Used Car Export Prices - Real-time Quote | Check Your Car's Overseas Value - GlobalExport",
+      "description": "Check your used car's overseas export price in real-time. Compare export prices that are higher than domestic market values and find the optimal time to sell."
+    },
+    "about": {
+      "title": "GlobalExport - Korea's No.1 Used Car Export Platform | About Us",
+      "description": "GlobalExport is Korea's No.1 used car overseas export platform. With a buyer network in over 40 countries, we provide safe and transparent used car export services."
+    },
+    "quote": {
+      "title": "Free Used Car Export Quote | Check in 3 Minutes - GlobalExport",
+      "description": "Get a free export quote for your used car in just 3 minutes. Simply enter your vehicle information to instantly check real-time demand from global buyers and estimated export prices."
+    }
+  },
+  "pages": {
+    "models": {
+      "title": "Popular Used Car Export Models",
+      "subtitle": "Discover the most popular used car models for overseas export.\nThese vehicles are in high demand across the Middle East, Southeast Asia, and Latin America.",
+      "categories": [
+        {
+          "title": "Compact SUV - Sportage, Tucson",
+          "desc": "Explosive demand in the Middle East with high residual value. First choice for overseas buyers due to fuel efficiency and durability.",
+          "details": [
+            "#1 demand in Middle East & Africa",
+            "Vehicles within 10 years preferred",
+            "Under 150,000km mileage recommended"
+          ]
+        },
+        {
+          "title": "Mid-size SUV - Santa Fe, Sorento",
+          "desc": "#1 preference in family-oriented regions (Latin America/Middle East). Popular in cultures with large families thanks to 7-seat configuration.",
+          "details": [
+            "#1 family vehicle in Latin America & Middle East",
+            "Diesel models especially popular",
+            "4WD option commands premium pricing"
+          ]
+        },
+        {
+          "title": "Vans - Starex, Carnival",
+          "desc": "Steady sellers in Southeast Asia & Central Asia. Consistent demand for multi-passenger transport and business use.",
+          "details": [
+            "Popular for minibus conversion in Southeast Asia",
+            "12-seater models most popular",
+            "LPG models also exportable"
+          ]
+        },
+        {
+          "title": "Commercial/Trucks - Porter, Bongo",
+          "desc": "Essential for construction sites in developing countries. High demand in Africa and Central Asia due to durability and economy.",
+          "details": [
+            "Essential at African construction sites",
+            "Explosive demand for 1-ton trucks",
+            "Even older vehicles are exportable"
+          ]
+        }
+      ],
+      "ctaTitle": "Can my car be exported too?",
+      "ctaDesc": "Many other models beyond those listed above are eligible for export. Get a free quote.",
+      "ctaButton": "Get Free Quote"
+    },
+    "price": {
+      "title": "Real-time Used Car Export Prices",
+      "subtitle": "Check your used car's overseas export price in real-time.\nCompare export prices higher than domestic market values and find the optimal time to sell.",
+      "disclaimer": "* Prices may vary based on vehicle condition, options, and market conditions.",
+      "tableTitle": "Export Prices by Model",
+      "thModel": "Model",
+      "thYear": "Year",
+      "thDomestic": "Domestic Price",
+      "thExport": "Export Price",
+      "thDiff": "Difference",
+      "thTrend": "Trend",
+      "priceData": [
+        { "model": "Hyundai Tucson", "year": "2020", "domestic": 1850, "export": 2400, "diff": "+29.7%", "trend": "up" },
+        { "model": "Kia Sportage", "year": "2019", "domestic": 1650, "export": 2200, "diff": "+33.3%", "trend": "up" },
+        { "model": "Hyundai Santa Fe", "year": "2020", "domestic": 2100, "export": 2850, "diff": "+35.7%", "trend": "up" },
+        { "model": "Kia Sorento", "year": "2021", "domestic": 2800, "export": 3500, "diff": "+25.0%", "trend": "stable" },
+        { "model": "Hyundai Palisade", "year": "2020", "domestic": 3200, "export": 4100, "diff": "+28.1%", "trend": "up" },
+        { "model": "Kia Carnival", "year": "2021", "domestic": 2900, "export": 3800, "diff": "+31.0%", "trend": "up" }
+      ],
+      "regionalTitle": "Popular Models by Region",
+      "regionalData": [
+        { "region": "Middle East", "models": ["Tucson", "Santa Fe", "Sorento"], "demand": "Very High" },
+        { "region": "Russia/CIS", "models": ["Sportage", "Tucson", "Carnival"], "demand": "High" },
+        { "region": "Africa", "models": ["Porter", "Bongo", "Starex"], "demand": "Very High" },
+        { "region": "Southeast Asia", "models": ["Carnival", "Staria", "Palisade"], "demand": "Moderate" }
+      ],
+      "demandVeryHigh": "Very High",
+      "demandHigh": "High",
+      "demandModerate": "Moderate",
+      "trendTitle": "Price Trend Analysis",
+      "trendData": [
+        { "period": "2024 Q1", "change": "+5.2%", "description": "Increased SUV export demand" },
+        { "period": "2024 Q2", "change": "+3.8%", "description": "Rising Middle East demand" },
+        { "period": "2024 Q3", "change": "+7.1%", "description": "Russian market recovery" },
+        { "period": "2024 Q4", "change": "+4.5%", "description": "Year-end export peak season" }
+      ],
+      "forecastTitle": "2024 Export Price Forecast",
+      "forecastDesc": "The used car export market in 2024 is expected to maintain an overall upward trend. SUV model demand continues to grow, and with import demand recovering in the Middle East and Russia, export prices are expected to rise further. Now is a great time to consider exporting.",
+      "ctaTitle": "Want to know your car's exact export price?",
+      "ctaDesc": "Enter your vehicle information to receive an accurate export estimate based on real buyer bids.",
+      "ctaButton": "Get Free Price Quote"
+    },
+    "about": {
+      "title": "GlobalExport - Korea's No.1 Used Car Export Platform",
+      "subtitle": "GlobalExport is a specialized platform for exporting Korean used cars worldwide.\nWith over 10 years of experience and a buyer network spanning 40+ countries,\nwe provide safe and transparent export services.",
+      "visionTitle": "Our Vision",
+      "visions": [
+        {
+          "title": "Global Market Leadership",
+          "desc": "Growing as the leading platform in the global used car export market, showcasing the value of Korean used cars worldwide."
+        },
+        {
+          "title": "Trust & Transparency",
+          "desc": "We openly share every step of the transaction process, providing an environment where customers can export with confidence."
+        },
+        {
+          "title": "Best Price Guaranteed",
+          "desc": "Through our extensive buyer network, we secure the highest possible price for our customers' vehicles."
+        }
+      ],
+      "networkTitle": "Global Network",
+      "networkDesc": "GlobalExport has a buyer network established in over 40 countries worldwide. We operate direct sales channels in major used car importing countries including the Middle East, Africa, Southeast Asia, and Russia.",
+      "networkRegions": [
+        "Middle East: UAE, Saudi Arabia, Qatar, Kuwait",
+        "Africa: Kenya, Tanzania, Nigeria, Ghana",
+        "Asia: Mongolia, Kazakhstan, Uzbekistan",
+        "Russia and CIS countries"
+      ],
+      "stats": {
+        "countries": "40+",
+        "countriesLabel": "Export Countries",
+        "buyers": "500+",
+        "buyersLabel": "Global Buyers",
+        "annual": "10,000+",
+        "annualLabel": "Annual Exports",
+        "experience": "10yr+",
+        "experienceLabel": "Industry Experience"
+      },
+      "featuresTitle": "Service Features",
+      "features": [
+        {
+          "title": "Dedicated Manager",
+          "desc": "A dedicated manager handles the entire export process, providing 1:1 customer care."
+        },
+        {
+          "title": "Secure Payment System",
+          "desc": "Our escrow payment system ensures safe and secure transactions."
+        },
+        {
+          "title": "Nationwide Pickup",
+          "desc": "Free vehicle pickup service available anywhere in Korea."
+        },
+        {
+          "title": "Real-time Tracking",
+          "desc": "Track your vehicle in real-time from shipping to arrival."
+        }
+      ],
+      "ctaTitle": "Check Your Car's Export Value Now",
+      "ctaDesc": "Get a free price quote to find out your car's overseas export value, and consult with our expert advisors.",
+      "ctaButton": "Get Free Price Quote"
+    },
+    "quote": {
+      "title": "Free Used Car Export Quote",
+      "subtitle": "Simply enter your vehicle information to instantly check\nreal-time demand from global buyers and estimated export prices.",
+      "steps": [
+        {
+          "title": "Enter Vehicle Info",
+          "desc": "Enter basic information like model, year, and mileage. It only takes 3 minutes."
+        },
+        {
+          "title": "View Estimated Price",
+          "desc": "We analyze real-time demand data from global buyers to provide your estimated export price."
+        },
+        {
+          "title": "Buyer Matching",
+          "desc": "We connect you directly with verified overseas buyers offering the highest price."
+        }
+      ],
+      "trustTitle": "Use with confidence",
+      "trustBadges": [
+        "100% Free Consultation",
+        "Privacy Protected",
+        "No Forced Contracts",
+        "Response within 10 min"
+      ]
+    }
+  }
+}
